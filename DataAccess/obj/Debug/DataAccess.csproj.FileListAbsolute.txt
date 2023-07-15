@@ -1,0 +1,2 @@
+C:\wamp64\www\TestSoap\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\wamp64\www\TestSoap\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
