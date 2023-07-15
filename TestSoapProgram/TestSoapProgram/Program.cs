@@ -16,11 +16,13 @@ namespace TestSoapProgram
             int registros = 0;
             DARequest objDARequest = new DARequest();
             List<Request> listRequest = new List<Request>();
-            TestSoapProgram.ServiceReferenceTest.ZECP_WS_MARCA_VISUAL_ASISTClient _objZECP_WS_MARCA_VISUAL_ASISTClient = new ZECP_WS_MARCA_VISUAL_ASISTClient();
+            TestSoapProgram.ServiceReferenceTest.ZECP_WS_MARCA_VISUAL_ASISTClient _objZECP_WS_MARCA_VISUAL_ASISTClient = new ZECP_WS_MARCA_VISUAL_ASISTClient("Marcaciones");
            
             ZwsMarcaVisualAsist objZwsMarcaVisualAsist = new ZwsMarcaVisualAsist(); 
             ZesMarcaVisual[] listZesMarcaVisual;
             ZwsMarcaVisualAsistResponse objZwsMarcaVisualAsistResponse = new ZwsMarcaVisualAsistResponse();
+            ZwsMarcaVisualAsistResponse1 objZwsMarcaVisualAsistResponse1 = new ZwsMarcaVisualAsistResponse1();
+            ZwsMarcaVisualAsistRequest objZwsMarcaVisualAsistRequest;
 
             Console.Write("Registros: ");
             registros = Convert.ToInt32(Console.ReadLine());
@@ -41,7 +43,12 @@ namespace TestSoapProgram
             }
 
             objZwsMarcaVisualAsist.ItMarca = listZesMarcaVisual;
-            
+            objZwsMarcaVisualAsistRequest = new ZwsMarcaVisualAsistRequest(objZwsMarcaVisualAsist);
+
+            _objZECP_WS_MARCA_VISUAL_ASISTClient.ClientCredentials.UserName.UserName = "DSN_INTER01";
+            _objZECP_WS_MARCA_VISUAL_ASISTClient.ClientCredentials.UserName.Password = "Laredo23.*";
+
+
             objZwsMarcaVisualAsistResponse = _objZECP_WS_MARCA_VISUAL_ASISTClient.ZwsMarcaVisualAsist(objZwsMarcaVisualAsist);
 
 

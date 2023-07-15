@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TestSoapProgram",
+    "\\TestSoapProgram\\TestSoapProgram"
   ],
-  "SelectedNode": "\\C:\\wamp64\\www\\TestSoap",
+  "SelectedNode": "\\TestSoapProgram\\TestSoapProgram.sln",
   "PreviewInSolutionExplorer": false
 }
