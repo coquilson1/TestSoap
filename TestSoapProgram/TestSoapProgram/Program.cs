@@ -21,6 +21,7 @@ namespace TestSoapProgram
            
             ZwsMarcaVisualAsist objZwsMarcaVisualAsist = new ZwsMarcaVisualAsist(); 
             ZesMarcaVisual[] listZesMarcaVisual;
+            ZesResultado[] listZesMarcaResultado = new ZesResultado[0];
             ZwsMarcaVisualAsistResponse objZwsMarcaVisualAsistResponse = new ZwsMarcaVisualAsistResponse();
             ZwsMarcaVisualAsistResponse1 objZwsMarcaVisualAsistResponse1 = new ZwsMarcaVisualAsistResponse1();
             ZwsMarcaVisualAsistRequest objZwsMarcaVisualAsistRequest;
@@ -37,13 +38,38 @@ namespace TestSoapProgram
                 objZesMarcaVisual.CodigoTrab = listRequest[i].vchCodigoPersona;
                 objZesMarcaVisual.Dni = listRequest[i].vchNumDocumento;
                 objZesMarcaVisual.Fecha = listRequest[i].Fecha;
+                //objZesMarcaVisual.Evento = "";
                 objZesMarcaVisual.HoraIni = listRequest[i].Hora;
+                //objZesMarcaVisual.HoraFin = "";
+                //objZesMarcaVisual.Entrada = "";
+                //objZesMarcaVisual.SalidaRef = "";
+                //objZesMarcaVisual.EntradaRef = "";
+                //objZesMarcaVisual.Salida = "";
+                //objZesMarcaVisual.MarcaAdc01 = "";
+                //objZesMarcaVisual.MarcaAdc02 = "";
+                //objZesMarcaVisual.Asistencia = "";
+                //objZesMarcaVisual.Jornada = "";
+                //objZesMarcaVisual.Refrigerio = "";
+                //objZesMarcaVisual.Atraso = "";
+                //objZesMarcaVisual.SalidaTem = "";
+                //objZesMarcaVisual.Ausencia = "";
+                //objZesMarcaVisual.HorasAdic = "";
+                //objZesMarcaVisual.Horas25 = "";
+                //objZesMarcaVisual.Horas35 = "";
+                //objZesMarcaVisual.Horas100 = "";
+                //objZesMarcaVisual.HorasTot = "";
+                //objZesMarcaVisual.HorasNoc = "";
+                //objZesMarcaVisual.Justificacion = "";
+                //objZesMarcaVisual.InicioJust = "";
+                //objZesMarcaVisual.FinJust = "";
+                //objZesMarcaVisual.TotalHrsJust = "";
 
                 listZesMarcaVisual[i] = objZesMarcaVisual;
 
             }
 
             objZwsMarcaVisualAsist.ItMarca = listZesMarcaVisual;
+            objZwsMarcaVisualAsist.ItResul = listZesMarcaResultado;
             objZwsMarcaVisualAsistRequest = new ZwsMarcaVisualAsistRequest(objZwsMarcaVisualAsist);
 
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;

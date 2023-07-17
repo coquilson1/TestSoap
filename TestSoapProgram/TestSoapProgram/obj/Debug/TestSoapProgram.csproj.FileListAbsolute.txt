@@ -9,6 +9,7 @@ C:\wamp64\www\TestSoap\TestSoapProgram\TestSoapProgram\bin\Debug\System.Configur
 C:\wamp64\www\TestSoap\TestSoapProgram\TestSoapProgram\bin\Debug\System.Security.AccessControl.xml
 C:\wamp64\www\TestSoap\TestSoapProgram\TestSoapProgram\bin\Debug\System.Security.Permissions.xml
 C:\wamp64\www\TestSoap\TestSoapProgram\TestSoapProgram\bin\Debug\System.Security.Principal.Windows.xml
+C:\wamp64\www\TestSoap\TestSoapProgram\TestSoapProgram\obj\Debug\TestSoapProgram.csproj.AssemblyReference.cache
 C:\wamp64\www\TestSoap\TestSoapProgram\TestSoapProgram\obj\Debug\TestSoapProgram.csproj.SuggestedBindingRedirects.cache
 C:\wamp64\www\TestSoap\TestSoapProgram\TestSoapProgram\obj\Debug\TestSoapProgram.csproj.CoreCompileInputs.cache
 C:\wamp64\www\TestSoap\TestSoapProgram\TestSoapProgram\obj\Debug\TestSoapProgram.csproj.CopyComplete
