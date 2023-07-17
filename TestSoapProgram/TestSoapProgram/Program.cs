@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using TestSoapProgram.DataAccess.Access;
@@ -45,6 +46,7 @@ namespace TestSoapProgram
             objZwsMarcaVisualAsist.ItMarca = listZesMarcaVisual;
             objZwsMarcaVisualAsistRequest = new ZwsMarcaVisualAsistRequest(objZwsMarcaVisualAsist);
 
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             _objZECP_WS_MARCA_VISUAL_ASISTClient.ClientCredentials.UserName.UserName = "DSN_INTER01";
             _objZECP_WS_MARCA_VISUAL_ASISTClient.ClientCredentials.UserName.Password = "Laredo23.*";
 
